@@ -1,0 +1,18 @@
+{
+  "builders": [
+    {
+      "type": "digitalocean",
+      "client_id": "",
+      "api_key": "",
+      "region": "ams2",
+      "image": "centos-6-5-x64",
+      "snapshot_name": "CentOS 6.5 {{timestamp}}"
+  }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "prep.sh"
+    }
+  ]
+}
